@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+qunetsim-venv/
+env/
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.secret
+
+# Generated QKD key material
+qll/raw_key.txt
+qll/block_*.json
+kms/key_pool/*.json
+
+# Generated test and transfer data
+received_files/
+test_files/
+original.txt
+received.txt
+
+# Packet captures and local logs
+*.pcap
+*.pcapng
+*.log
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+
+# Additional local experiment artifacts
+experiment_results.txt
+original.txt
+received.txt
+tls_server.log
+qkd_tls_capture.pcapng
+test_files/
+received_files/
+
+# Local TLS experiment scripts (keep private until reviewed)
+tls_file_client.py
+tls_file_server.py
